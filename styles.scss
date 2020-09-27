@@ -1,0 +1,78 @@
+@import "./variables";
+
+
+/*___ Abstract classes ___*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*___ Standard classes ___*/
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0px;
+}
+
+.clock {
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: $font-a;
+    font-size: 3em;
+    text-shadow: 0em 0em 10px white !important;
+}
+
+.img-bkg {
+    @extend .center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 1024px;
+    max-height: 768px;
+}
+
+.bookmarks {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: $font-a;
+    font-weight: 500;
+    
+    a{
+        font-size: 1.5em;
+        margin: 1vw 2vw;
+        color: $text-color;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease 0.3s;
+        text-shadow: 0em 0em 10px white !important;
+        
+        &:hover{
+            font-size: 2.5em;
+            margin: -1vw -0.1vw;
+            text-shadow: 0em 0em 20px cyan !important;
+        }
+    }
+}
+
+.clock{
+    @extend .center;
+}
