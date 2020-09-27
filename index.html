@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="./icons/css/all.min.css">
         <title>Home page</title>
     </head>
-    <body>
+    <body onload="startTime()">
+
         <script>
             function startTime() {
                 var today = new Date();
@@ -31,134 +32,132 @@
                 return i;
             }
         </script>
-        <body onload="startTime()">
-            <h1>
-                <div id="txt" class="clock"></div>
-            </h1>
-            <div class="bookmarks">
+        <h1>
+            <div id="txt" class="clock"></div>
+        </h1>
+        <footer class="bookmarks">
 
-                <a href="https://open.spotify.com/#_=_" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-spotify"></i>
-                        <br>
-                        Spotify
-                    </div>
-                </a>
+            <a href="https://open.spotify.com/#_=_" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-spotify"></i>
+                    <br>
+                    Spotify
+                </div>
+            </a>
 
-                <a href="https://www.duolingo.com/" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fas fa-globe-americas"></i>
-                        <br>
-                        Duolingo
-                    </div>
-                </a>
+            <a href="https://www.duolingo.com/" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fas fa-globe-americas"></i>
+                    <br>
+                    Duolingo
+                </div>
+            </a>
 
-                <a href="https://web.whatsapp.com/" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-whatsapp"></i>
-                        <br>
-                        Whatsapp
-                    </div>
-                </a>
+            <a href="https://web.whatsapp.com/" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-whatsapp"></i>
+                    <br>
+                    Whatsapp
+                </div>
+            </a>
 
-                <a
-                    href="https://calendar.google.com/calendar/u/0/r"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="far fa-calendar-alt"></i>
-                        <br>
-                        Calendar
-                    </div>
-                </a>
+            <a
+                href="https://calendar.google.com/calendar/u/0/r"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="far fa-calendar-alt"></i>
+                    <br>
+                    Calendar
+                </div>
+            </a>
 
-                <a href="https://www.youtube.com/" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-youtube"></i>
-                        <br>
-                        Youtube
-                    </div>
-                </a>
+            <a href="https://www.youtube.com/" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-youtube"></i>
+                    <br>
+                    Youtube
+                </div>
+            </a>
 
-                <a
-                    href="https://discordapp.com/channels/@me"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="fab fa-discord"></i>
-                        <br>
-                        Discord
-                    </div>
-                </a>
+            <a
+                href="https://discordapp.com/channels/@me"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="fab fa-discord"></i>
+                    <br>
+                    Discord
+                </div>
+            </a>
 
-                <a href="https://twitter.com/home" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-twitter"></i>
-                        <br>
-                        Twitter
-                    </div>
-                </a>
+            <a href="https://twitter.com/home" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-twitter"></i>
+                    <br>
+                    Twitter
+                </div>
+            </a>
 
-                <a
-                    href="https://drive.google.com/drive/my-drive"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="fab fa-google-drive"></i>
-                        <br>
-                        Drive
-                    </div>
-                </a>
+            <a
+                href="https://drive.google.com/drive/my-drive"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="fab fa-google-drive"></i>
+                    <br>
+                    Drive
+                </div>
+            </a>
 
-                <a href="https://github.com" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-github"></i>
-                        <br>
-                        Github
-                    </div>
-                </a>
+            <a href="https://github.com" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-github"></i>
+                    <br>
+                    Github
+                </div>
+            </a>
 
-                <a
-                    href="https://boards.4channel.org/lit/catalog"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="fas fa-book"></i>
-                        <br>
-                        Lit
-                    </div>
-                </a>
+            <a
+                href="https://boards.4channel.org/lit/catalog"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="fas fa-book"></i>
+                    <br>
+                    Lit
+                </div>
+            </a>
 
-                <a href="https://www.goodreads.com/" class="bookmarks__el" target="_blank">
-                    <div>
-                        <i class="fab fa-goodreads"></i>
-                        <br>
-                        Goodreads
-                    </div>
-                </a>
+            <a href="https://www.goodreads.com/" class="bookmarks__el" target="_blank">
+                <div>
+                    <i class="fab fa-goodreads"></i>
+                    <br>
+                    Goodreads
+                </div>
+            </a>
 
-                <a
-                    href="https://www.campusvirtual.frba.utn.edu.ar/especialidad/"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="fas fa-university"></i>
-                        <br>
-                        Utn
-                    </div>
-                </a>
+            <a
+                href="https://www.campusvirtual.frba.utn.edu.ar/especialidad/"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="fas fa-university"></i>
+                    <br>
+                    Utn
+                </div>
+            </a>
 
-                <a
-                    href="https://mail.google.com/mail/u/0/#inbox"
-                    class="bookmarks__el"
-                    target="_blank">
-                    <div>
-                        <i class="fas fa-envelope"></i>
-                        <br>
-                        Gmail
-                    </div>
-                </a>
-
-            </div>
-        </body>
-    </html>
+            <a
+                href="https://mail.google.com/mail/u/0/#inbox"
+                class="bookmarks__el"
+                target="_blank">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <br>
+                    Gmail
+                </div>
+            </a>
+        </footer>
+    </body>
+</html>

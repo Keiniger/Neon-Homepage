@@ -17,7 +17,7 @@
 /*___ Standard classes ___*/
 
 body {
-    background: url(./greek_neon.gif) no-repeat top center;
+    background: url(./greek_neon.gif) no-repeat center center;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
     color: $text-color;
@@ -35,6 +35,7 @@ body {
     font-size: 3em;
     text-shadow: 0em 0em 10px white !important;
     @extend .center;
+    height: 10%;
 }
 
 .bookmarks {   
@@ -42,11 +43,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    position: absolute;
-    top: 75%;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 70vh 10% 0vh 10%;
     font-family: $font-a;
     font-weight: 500;
     
@@ -66,5 +64,9 @@ body {
             margin: 0px 11px;
             text-shadow: 0em 0em 20px black !important;
         }
+    }
+
+    @media (max-width: 1024px){
+        margin: 50vh 10% 0vh 10%;
     }
 }

@@ -22,7 +22,7 @@ font-family: 'Syne', sans-serif;
 
 /*___ Standard classes ___*/
 body {
-  background: url(./greek_neon.gif) no-repeat top center;
+  background: url(./greek_neon.gif) no-repeat center center;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
   scrollbar-width: none;
@@ -42,6 +42,7 @@ body::-webkit-scrollbar {
   font-family: "Lato", sans-serif;
   font-size: 3em;
   text-shadow: 0em 0em 10px white !important;
+  height: 10%;
 }
 
 .bookmarks {
@@ -54,11 +55,8 @@ body::-webkit-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  position: absolute;
-  top: 75%;
   width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 70vh 10% 0vh 10%;
   font-family: "Lato", sans-serif;
   font-weight: 500;
 }
@@ -81,5 +79,11 @@ body::-webkit-scrollbar {
   font-size: 26px;
   margin: 0px 11px;
   text-shadow: 0em 0em 20px black !important;
+}
+
+@media (max-width: 1024px) {
+  .bookmarks {
+    margin: 50vh 10% 0vh 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
