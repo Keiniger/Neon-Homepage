@@ -26,6 +26,7 @@ body {
   background-color: black;
   color: white;
   margin: 0px;
+  overflow: hidden;
 }
 
 .clock {
