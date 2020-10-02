@@ -8,30 +8,11 @@
             rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="./icons/css/all.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="clock.js"></script>
         <title>Home page</title>
     </head>
     <body onload="startTime()">
-
-        <script>
-            function startTime() {
-                var today = new Date();
-                var h = today.getHours();
-                var m = today.getMinutes();
-                var s = today.getSeconds();
-                m = checkTime(m);
-                s = checkTime(s);
-                document
-                    .getElementById('txt')
-                    .innerHTML = h + ":" + m + ":" + s;
-                var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-                if (i < 10) {
-                    i = "0" + i
-                }; // add zero in front of numbers < 10
-                return i;
-            }
-        </script>
         <h1>
             <div id="txt" class="clock"></div>
         </h1>
