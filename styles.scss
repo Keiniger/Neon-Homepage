@@ -1,72 +1,76 @@
 @import "./variables";
 
-
 /*___ Abstract classes ___*/
-.center{
-    display: block;
-    margin: auto;
-    text-align: center;
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*___ Standard classes ___*/
 
 body {
-    background: url(./greek_neon.gif) no-repeat center center;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-    color: $text-color;
-    background-color: $background-color;
-    height: 100%;
-    margin: 30px auto; 
+  background: url(./greek_neon.gif) no-repeat center center;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  color: $text-color;
+  background-color: $background-color;
+  height: 100%;
+  margin: 30px auto;
 
-    &::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-    }
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 }
 
 .clock {
-    font-family: $font-a;
-    font-size: 3em;
-    text-shadow: 0em 0em 10px white !important;
-    @extend .center;
-    height: 10%;
+  font-family: $font-a;
+  font-size: 3em;
+  text-shadow: 0em 0em 10px white !important;
+  @extend .center;
+  height: 10%;
 }
 
-.bookmarks {   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    width: 80%;
-    margin: 70vh 10% 0vh 10%;
-    font-family: $font-a;
-    font-weight: 500;
-    
-    a{
-        font-size: 22px;
-        margin: 10px 15px;
-        color: $text-color;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.6s ease 0s;
-        text-shadow: 0em 0em 10px white !important;
-        justify-self: center;
+.bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  width: 80%;
+  margin: 70vh 10% 0vh 10%;
+  font-family: $font-a;
+  font-weight: 500;
 
-        &:hover{
-            position: relative;
-            font-size: 26px;
-            margin: 0px 11px;
-            text-shadow: 0em 0em 20px black !important;
-        }
-    }
+  a {
+    font-size: 22px;
+    margin: 10px 15px;
+    color: $text-color;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.6s ease 0s;
+    text-shadow: 0em 0em 10px white !important;
+    justify-self: center;
 
-    @media (max-width: 1024px){
-        margin: 50vh 10% 0vh 10%;
+    &:hover {
+      position: relative;
+      font-size: 26px;
+      margin: 0px 11px;
+      text-shadow: 0em 0em 20px black !important;
     }
+  }
+
+  @media (max-width: 1024px) {
+    margin: 50vh 10% 0vh 10%;
+  }
+}
+
+::selection {
+  color: black;
+  background: #1cc9b7;
 }

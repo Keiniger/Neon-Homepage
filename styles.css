@@ -86,4 +86,14 @@ body::-webkit-scrollbar {
     margin: 50vh 10% 0vh 10%;
   }
 }
+
+::-moz-selection {
+  color: black;
+  background: #1cc9b7;
+}
+
+::selection {
+  color: black;
+  background: #1cc9b7;
+}
 /*# sourceMappingURL=styles.css.map */
